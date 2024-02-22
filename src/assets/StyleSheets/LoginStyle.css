@@ -1,0 +1,78 @@
+.login-form {
+  width: 407px;
+  height: 400px;
+  background: #fef1d8;
+  border-radius: 10px;
+  padding: 30px 40px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  backdrop-filter: blur(20px);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.inputs {
+  display: flex;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+.center input {
+  margin-bottom: 10px;
+}
+.buttonSignin {
+  padding:7px;
+  border-radius: 30px;
+  border: solid 0.5px;
+  background-color: #898888;
+  color: white;
+  font-weight: 100;
+  cursor: pointer;
+  transition: ease 0.5s;
+}
+.buttonSignin:hover{
+  
+  background-color: #404040;
+  
+}
+.button-wrap {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 300px;
+  max-width: 220px;
+  height: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+  
+}
+
+input:hover {
+  border: 2px solid lightgrey;
+  box-shadow: 0px 0px 20px -17px;
+}
+input:active {
+  transform: scale(0.95);
+}
+span i {
+  padding :10px
+}
+.error-message{
+  color: red;
+  
+}
+.error-message i{
+  font-size: 20px;
+  
+}
