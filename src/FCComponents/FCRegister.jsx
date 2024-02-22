@@ -34,15 +34,15 @@ export default function FCRegister(props) {
     //check each value if is vaild if not it return true(error) and show the error message
     //without all false cant send the new User object
     if (
-      !validateUsername() ||
-      !validatePassword() ||
-      !validateConfirmPassword() ||
-      !validateName() ||
-      !validateLastName() ||
-      !validateEmail() ||
-      !validateBirth() ||
-      !validateNumber() ||
-      !validateStreet()
+      validateUsername() &&
+      validatePassword()&&
+      validateConfirmPassword() &&
+      validateName() &&
+      validateLastName() &&
+      validateEmail() &&
+      validateBirth() &&
+      validateNumber() &&
+      validateStreet()
     ) {
       //creates user object
       let newUser = {
@@ -58,6 +58,7 @@ export default function FCRegister(props) {
         birth,
         file,
       };
+      console.log(newUser)
 
       props.SendToParent(newUser); //send the new user to the parent(App)
       navigate("/"); //navigate to the sign in page
