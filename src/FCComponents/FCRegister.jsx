@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import bg from "..//assets/StyleSheets/Images/bg.jpg";
+
 
 import "@fortawesome/fontawesome-free/css/all.css";
 

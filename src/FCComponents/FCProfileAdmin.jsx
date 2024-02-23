@@ -13,9 +13,7 @@ export default function FCProfileAdmin(props) {
       <div>
         <div class="card">
           <div className="img-wrapper">
-            <div class="profileImage">
-              <i class="fa-solid fa-user-tie"></i>
-            </div>
+            <div class="profileImage"></div>
           </div>
           <div class="textContainer">
             <p class="name">

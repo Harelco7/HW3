@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import bg from "..//assets/StyleSheets/Images/bg.jpg";
 
 export default function FCProfile(props) {
-  const [user, setUser] = useState({});//user that loged in state
-  const [logoutEmail, setLogoutEmail] = useState("");// user that want to logout state
-  const [showLogoutInput, setShowLogoutInput] = useState(false);// input show or hide state
-  
+  const [user, setUser] = useState({}); //user that loged in state
+  const [logoutEmail, setLogoutEmail] = useState(""); // user that want to logout state
+  const [showLogoutInput, setShowLogoutInput] = useState(false); // input show or hide state
+
   //on load this component do this
   useEffect(() => {
-    const loggedInUser = JSON.parse(sessionStorage.getItem("loginUser"));//take the user that loged in 
-    setUser(loggedInUser);//put it in state
+    const loggedInUser = JSON.parse(sessionStorage.getItem("loginUser")); //take the user that loged in
+    setUser(loggedInUser); //put it in state
   }, []);
   const navigate = useNavigate();
 
@@ -18,7 +19,6 @@ export default function FCProfile(props) {
       if (logoutEmail == user.email) {
         navigate("/");
         sessionStorage.clear();
-    
       }
     }
     setShowLogoutInput(true);
@@ -30,9 +30,7 @@ export default function FCProfile(props) {
         <h1>My Profile</h1>
         <div class="card">
           <div className="img-wrapper">
-            <div class="profileImage">
-              <i class="fa-solid fa-user-tie"></i>
-            </div>
+            <div class="profileImage"></div>
           </div>
           <div class="textContainer">
             <p class="name">
