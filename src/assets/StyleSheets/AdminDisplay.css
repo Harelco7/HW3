@@ -2,9 +2,10 @@ html, body {
     background: rgb(255, 170, 0);
     background: linear-gradient(45deg, rgba(255, 170, 0, 1) 0%, rgba(255, 196, 0, 0.6530987394957983) 100%);
     width: 100%;
-    height: 100vh; /* Ensure background covers the entire viewport */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    height: 100vh; 
+    margin: 0; 
+    padding: 0; 
+  
   }
 .cards-admin-display {
   display: flex;
@@ -13,7 +14,8 @@ html, body {
 
 .cards-wrapper {
   display: flex;
-  flex-wrap: wrap; /* Allow the cards to wrap to the next row */
-  max-width: 1200px; /* Adjust the maximum width of the card grid */
+  flex-wrap: wrap;
+  max-width: 1200px; 
   justify-content: center;
+  
 }

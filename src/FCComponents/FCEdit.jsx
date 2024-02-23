@@ -15,7 +15,7 @@ export default function FCEdit(props) {
 
   const [user, setUser] = useState({}); //user state that will be update
 
-  const cities= ["Tel Aviv","Rishon Lezion","Netanya","Eilat","Haifa"]
+  const cities = ["Tel Aviv", "Rishon Lezion", "Netanya", "Eilat", "Haifa"];
 
   const navigate = useNavigate();
 
@@ -46,13 +46,10 @@ export default function FCEdit(props) {
     navigate("/profile");
   };
 
-
-
-
   return (
     <div>
       <div>
-        <div className="container">
+        <div className="page-register">
           <div className="continer-form">
             <h1>
               <i className="fa-solid fa-pen" style={{ margin: "10px" }}></i>Edit
@@ -87,10 +84,9 @@ export default function FCEdit(props) {
                     onChange={(e) => setEditCity(e.target.value)}
                   >
                     <option value="">Select a city</option>
-                  {cities.map((city)=>(
-
-                  <option value={city}>{city}</option>
-                  ))}
+                    {cities.map((city) => (
+                      <option value={city}>{city}</option>
+                    ))}
                   </select>
                   Street:{" "}
                   <input
@@ -129,6 +125,7 @@ export default function FCEdit(props) {
                   />
                   Profile Image:{" "}
                   <input
+                    style={{ height: "50px", fontSize: "13px" }}
                     type="file"
                     value={Editfile}
                     onChange={(e) => setEditFile(e.target.value)}

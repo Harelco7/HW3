@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import bg from "..//assets/StyleSheets/Images/bg.jpg";
 
 import "@fortawesome/fontawesome-free/css/all.css";
 
@@ -187,7 +188,7 @@ export default function FCRegister(props) {
 
   return (
     <div>
-      <div className="container">
+      <div className="page-register">
         <div className="continer-form">
           <h1>Register</h1>
           <div className="input-wrapper">
@@ -280,7 +281,7 @@ export default function FCRegister(props) {
                 />
                 {birthError && <p className="error">{birthError}</p>}
                 Profile Image:{" "}
-                <input type="file" onChange={(e) => setFile(e.target.value)} />
+                <input style={{height:"50px",fontSize:"13px"}} type="file" onChange={(e) => setFile(e.target.value)} />
               </div>
             </div>
           </div>
